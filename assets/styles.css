@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(182, 224, 221);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.imagen-perfil{
+    border-radius: 100%;
+}
+
+#navBar{
+    background-color: rgb(27, 92, 97);
+}
