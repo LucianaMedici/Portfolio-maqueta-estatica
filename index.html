@@ -13,18 +13,19 @@
 </head>
 
 <body>
+
     <section id="navBar"> <!-- seccion de navbar -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" style="padding: 0%;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/"><img src="assets/images/APLogo-20-20.png" alt="Logo Argentina Programa en png" width="20%" height="auto"></a>
+              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img src="assets/images/APLogo-20-20.png" alt="Logo Argentina Programa en png" width="12%" height="auto"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown text-center">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
+                        <b>Menú</b>
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#sobreMi">Sobre mi</a></li>
@@ -36,14 +37,22 @@
 
                 </ul>
                 <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item"><i class="fa-brands fa-linkedin"></i></li>
-                    <li class="list-group-item"><i class="fa-brands fa-square-github"></i></li>
-                    <li class="list-group-item"><i class="fa-solid fa-envelope"></i></li>
+                    <li class="list-group-item" style="padding: 4%;">  <a href="https://github.com/LucianaMedici" target="_blank"><i class="fa-brands fa-square-github fa-2x text-black"></i></a> </li>
+                    <li class="list-group-item" style="padding: 4%;">  <a href="#formularioContacto"><i class="fa-solid fa-envelope fa-2x text-black"></i></a> </li>
+                    <li class="list-group-item" style="padding: 4%;">  <a href="www.linkedin.com/in/luciana-medici" target="_blank"><i class="fa-brands fa-linkedin fa-2x text-black"></i></a> </li>
+                    <li class="list-group-item" style="padding: 3%;"> 
+        
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fa-solid fa-user-lock"></i>
+                        </button>  </li>
                 </ul>
+                
+               
+               
 
-                  <!-- Button trigger modal -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <i class="fa-solid fa-user-lock"></i>
+                <button type="button" class="btn">
+                    <i class="fa-solid fa-lock-open"></i>
                 </button>
   
  
@@ -51,47 +60,303 @@
             </div>
           </nav>
     </section>
+
     <header id="sobreMi"> <!--acá va imagen de portada, foto de perfil, redes sociales y Acerca De-->
-        <img src="assets/images/BannerLuces.jpg" alt="imágen de portada">
-        <img class="imagen-perfil" src="assets/images/Perfil.jpg" alt="Foto de perfil Luciana">
-        <h1>Hola!👋🏻 Bienvenido a mi portfolio! Soy Lu Medici, diseñadora y programadora web, con bases en experiencia e interfaz de usuario (UX/UI).</h1>
-        <h2>Te cuento acerca de mi</h2>
-            <p>Nací en Córdoba, Arg. en 1994. Soy curiosa, determinada y me apasiona aprender todos los días algo nuevo. Me encuentro 
-                dando un gran giro a mi trayectoria
-                profesional. Mis hobbies son entrenar, acampar con mi familia y cuidar mi jardín. Me entusiasma buscar soluciones creativas a diversos problemas para ayudar a los demás. Tengo 
-                capacidad de autogestión y también trabajo en equipo, 
-                considero que el trabajo colaborativo tiene una "magia" especial con la que podemos llegar más lejos. 
-                Estoy interesada en continuar capacitándome y formar parte de proyectos grandiosos e innovadores. 
-                Si tienes algo en mente y te interesan mis trabajos, no dudes en contactarme por cualquier consulta :)
-            </p>
+        <div class="container text-center" style="padding-top: 5rem;">
+            <div class="row">
+              <div class="col">
+                <img class="imagen-perfil" src="assets/images/Medici-Luciana-UX-Developer.PNG" alt="Foto de perfil Luciana">
+              </div>
+              <div class="col">
+                <h1>Hola!👋🏻 Bienvenido a mi portfolio! Soy Lu Medici</h1>
+                <hr>
+                <h2>Programadora web Full Stack Jr, con bases en diseño UX/UI.</h2>
+              </div>
+            </div>               
+  <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editImgPerfilModal">
+            <i class="fa-regular fa-pen-to-square">Editar imagen de Perfil</i>
+        </button>
+
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editNombreYTituloModal">
+            <i class="fa-regular fa-pen-to-square">Editar Nombre y Titulo</i>
+        </button>
+
+          </div>   
+
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <h2>About me</h2>
+                <p>Nací en Córdoba, Arg. en 1994. Soy curiosa, determinada y me apasiona aprender todos los días algo nuevo. Me encuentro 
+                    dando un gran giro a mi trayectoria
+                    profesional. Mis hobbies son entrenar, acampar con mi familia y cuidar mi jardín. Me entusiasma buscar soluciones creativas a diversos problemas para ayudar a los demás. Tengo 
+                    capacidad de autogestión y trabajo en equipo, considero que el trabajo colaborativo tiene una "magia" especial con la que podemos llegar más lejos. 
+                    Estoy interesada en continuar capacitándome y formar parte de proyectos grandiosos e innovadores. 
+                    Si tienes algo en mente, te interesan mis trabajos o por cualquier consulta, no dudes en contactarme :)
+                </p>              
+              </div>
+              <div class="col">
+                <img class="imagen-portada" src="assets/images/FrasePortada.jpg" alt="Foto de portada Luciana">
+              </div>
+            </div>           
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editAboutMeModal">
+            <i class="fa-regular fa-pen-to-square">Editar About Me</i>
+          </button>
+
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editImgPortadaModal">
+            <i class="fa-regular fa-pen-to-square">Editar imagen de portada</i>
+          </button>
+
+          </div> 
+  
     </header>
+
+    <hr>
 
     <section id="proyectos"> <!--seccion proyectos-->
         <h2>Mis proyectos</h2>
-        <div><!--portfolio--></div>
-        <div><!--caso de estudio curso UX codo a codo--></div>
-        <div><!--caso de estudio curso UX Coursera--></div>
+        <h3>Aquí te comparto mis trabajos como estudiante</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/images/foto-coding.jpg" class="card-img-top" alt="captura en VSC de html en la creación del portfolio">
+              <div class="card-body">
+                <h5 class="card-title">Creación del portfolio</h5>
+                <p class="card-text">Como proyecto integrador durante el cursado de Argentina Programa 3ra edición desarrollé mi propio portfolio. Lenguajes y herramientas utilizados: HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/images/prototipoHiFi.PNG" class="card-img-top" alt="Mokup prototipo del proyecto App PaseaDog">
+              <div class="card-body">
+                <h5 class="card-title">PaseaDog App</h5>
+                <p class="card-text">Formé parte de un equipo con el que diseñamos una aplicación para buscar paseadores de perros. Trabajamos de manera remota  
+                usando metodología Design Thinking, durande el cursado de Diseño UX-UI del programa Codo a Codo.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://drive.google.com/file/d/1blUTpBvgmAveqsSzz9_1qzMu22cdOQPF/view?usp=share_link" target="_blank">Para conocer más acerca del proyecto te invito a visitar éste link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/images/Case-Study-Coursera-UX-Medici.PNG" class="card-img-top" alt="Portada presentacion de caso de estudio realizado en Coursera">
+              <div class="card-body">
+                <h5 class="card-title">Case Study: Salón de Campo App</h5>
+                <p class="card-text">En el certificado de Diseño UX by Google de Coursera, me encuentro trabajando en un proyecto elejido a través de Sharpen. El mismo consiste en diseñar una app para realizar
+                  un recorrido virtual en un salón de bodas campestre.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://docs.google.com/presentation/d/1AyR0CRJpeG_CPHe41A40GZRYvcLpW-hB_M7YdzDy0EY/edit?usp=sharing" target="_blank">Para conocer más acerca del proyecto te invito a visitar éste link</a>
+              </div>
+            </div>
+          </div>
+        </div>
      </section>  
 
-    <section id="curriculumVitae"> <!--seccion curriculum vitae-->
-        <section> <!-- sección Educación y Experiencia -->
-            <div> <!-- Experiencia Laboral y Voluntariados--> </div>
-            <div> <!-- Educación--> </div>
-        </section>
+     <hr>
 
-        <section> <!-- sección Skills-->
-            <div> <!--Soft Skills--> </div>
-            <div> <!--Hard Skills--> </div>
-        </section>
+     <section id="curriculumVitae"> <!--seccion curriculum vitae-->
+      <section> <!-- sección Educación y Experiencia -->
+          <div> <!-- Experiencia Laboral y Voluntariados--> 
+                <h2>Experiencia Laboral y Voluntariados</h2>
+            <div class="accordion" id="accordionExperienciaLaboralVoluntariados">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    2020-2021 > Kinesióloga en Centros de Estética
+                    </button>
+                    </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <details>
+                      <summary>ACER "Centro Esthetic Salud"</summary>
+                        <ul>
+                          <li>Jornada parcial</li>
+                          <li>Tareas a cargo: Evaluación y diagnóstico de pacientes, tratamientos estéticos faciales y corporales</li>
+                        </ul>
+                      </details>
+                      <details>
+                      <summary>"Fusión Corporal"</summary>
+                        <ul>
+                          <li>Jornada parcial</li>
+                          <li>Tareas a cargo: Atención a clientes, evaluación y diagnóstico de pacientes, tratamientos estéticos faciales y corporales</li>
+                        </ul>
+                      </details>          
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2017-2019 > Microemprendimiento familiar
+                    </button>
+                    </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <details> 
+                      <summary>Producción y venta de pastas caseras</summary>
+                      <p>Tareas a cargo: atención a clientes, compra y gestión de stock, producción y reparto.</p>
+                      </details>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        2013-2017 > Voluntariado en Club Palermo Bajo
+                      </button>
+                      </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <details> 
+                        <summary>Entrenadora de Hockey sobre césped</summary>
+                        <p>Tareas a cargo: Planificación y asistencia al cuerpo técnico en entrenamientos de divisiones infantiles.</p>
+                      </details>                    
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div> <!-- Educación--> 
+            <h2>Educación y Capacitaciones</h2>
+            <div class="accordion" id="accordionEducaciónCapacitaciones">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Desarrollo Web
+                  </button>
+                  </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <details>
+                      <summary>Curso Argentina Programa</summary>
+                      <p>Periodo: Julio 2022 - Enero 2023</p>
+                      <p>Certificado Profesional: Desarrollador Web Full Stack Jr.</p>
+                      <p>La capacitación forma parte de un plan nacional gratuito de formación en programación y software, es impulsado por el Ministerio de Economía. 
+                          En su mayor parte es autogestionada, consta de dos etapas: #SéProgramar (modalidad asincrónica) y #YoProgramo (modalidad mixta).</p>
+                  </details>
+                  <details>
+                      <summary>Aprendizajes Autodidactas</summary>
+                      <p>Periodo: Eternamente :)</p>
+                      <p>Continuamente busco en diferentes plataformas contenido para ampliar mis capacidades y mejorar día a día con la práctica.</p>
+                  </details>          
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Diseño UX/UI
+                  </button>
+                  </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <details>
+                      <summary>Coursera</summary>
+                      <p>Periodo: Agosto 2022 - en curso</p>
+                      <p>Certificado Profesional: Diseño de experiencia del Usuario (UX) de Google</p>
+                      <p>El certificado consta de 7 cursos en línea asincrónicos de nivel proncipiante, al que pude acceder gracias a una beca
+                          otorgada por Comunidad IT junto a Coursera y Google. Aprendí sobre la importancia de la ivestigación y de trabajar la empatía como superpoder
+                       en cada proyecto de diseño que colaboremos como profesionales.</p>
+                  </details>
+                  <details>
+                      <summary>Agencia de Aprendizaje a lo largo de la Vida</summary>
+                      <p>Periodo: Agosto 2022 - Diciembre 2022</p>
+                      <p>Certificado Profesional: Diseño UX/UI</p>
+                      <p>El curso forma parte del programa Codo a Codo del Gobierno de la Ciudad de Buenos Aires, 
+                          que tiene el objetivo de brindar herramientas para inserción laboral. Su modalidad es virtual sincrónica. Durante el dictado
+                          de clases fuimos construyendo en equipo un caso de estudio que podés encontrar en la sección de mis proyectos. 
+                           </p>
+                  </details>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Kinesiología
+                    </button>
+                    </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <details>
+                      <summary>Colegio de Kinesiólogos de la Provincia de Córdoba</summary>
+                      <p>Periodo: 2020</p>
+                      <p>Certificado Profesional: Posgrado en Drenaje Linfático y Rehabilitación Vascular</p>
+                  </details>
+                  <details>
+                      <summary>Universidad Nacional de Córdoba</summary>
+                      <p>Periodo: 2015-2019</p>
+                      <p>Certificado Profesional: Licenciada en Kinesiología</p>
+                  </details>                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section> <!-- sección Skills-->
+            <div> <!--Soft Skills-->
+                <h2>Soft Skills</h2>
+                <div class="container text-center">
+                  <div class="row g-2">
+                    <div class="col-6">
+                      <div class="p-3">Creatividad <i class="fa-solid fa-palette"></i></div>
+                    </div>
+                    <div class="col-6">
+                      <div class="p-3">Predisposicion para investigar <i class="fa-solid fa-chart-line"></i></div>
+                    </div>
+                    <div class="col-6">
+                      <div class="p-3">Aprendizaje Proactivo <i class="fa-solid fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="col-6">
+                      <div class="p-3">Trabajo en equipo <i class="fa-solid fa-people-group"></i></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div> <!--Hard Skills--> 
+                <h2>Hard Skills</h2>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 85%">HTML 85%</div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 85%">CSS 85%</div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 65%">JavaScript 65%</div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 65%">Figma 65%</div>
+                </div>
+            </div>
+      </section>
     </section>
 
-    <section id="formularioContacto"> <!-- sección Formulario de Contacto-->
-    </section>
+    <hr>
 
-    <footer> <!--Icono de contacto y redes-->
+    <footer class="text-center"> <!--Icono de contacto y redes-->
+        <p>Medici Luciana</p>
+        <p>Córdoba, Argentina</p>
+        <p>lucianavmedici@gmail.com</p>
+        <a href="https://www.linkedin.com/in/luciana-medici/" target="_blank"><img src="assets/images/linkedin.svg" alt="Icono Linkedin"></a>
     </footer>
 
-     <!-- Modal Loguin-->
+
+
+        <!-- Modales-->
+        <!-- Modal Loguin-->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -104,6 +369,7 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
@@ -118,6 +384,119 @@
       </div>
     </div>
   </div>
+
+
+       <!-- Modal Foto de Perfil-->
+       <div class="modal fade" id="editImgPerfilModal" tabindex="-1" aria-labelledby="editImgPerfilModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="editImgPerfilModal">Editar Foto de Perfil</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="imgPerfil" class="form-label">Editar Imagen</label>
+                      <input type="url" placeholder="insertar url de imagen" id="imgPerfil" name="imgPerfil" required>
+                    </div>
+                
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal Nombre y Titulo-->
+      <div class="modal fade" id="editNombreYTituloModal" tabindex="-1" aria-labelledby="editNombreYTituloModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="editNombreYTituloModal">Editar Nombre y Titulo</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="editNombre" class="form-label">Editar Nombre</label>
+                      <textarea class="form-control" id="editNombre"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editNombre" class="form-label">Editar Titulo</label>
+                        <textarea class="form-control" id="editNombre"></textarea>
+                    </div>
+                
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Modal About Me-->
+        <div class="modal fade" id="editAboutMeModal" tabindex="-1" aria-labelledby="editAboutMeModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="editAboutMeModal">Editar About Me</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="editNombre" class="form-label">Editar seccion About Me</label>
+                          <textarea class="form-control" id="editNombre"></textarea>
+                        </div>
+                    
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- Modal imagen de Portada-->
+       <div class="modal fade" id="editImgPortadaModal" tabindex="-1" aria-labelledby="editImgPortadaModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="editImgPortadaModal">Editar imagen de portada</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="imgPortada" class="form-label">Editar Imagen</label>
+                      <input type="url" placeholder="insertar url de imagen" id="imgPortada" name="imgPortada" required>
+                    </div>
+                
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
